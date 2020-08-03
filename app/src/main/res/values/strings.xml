@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">WordRays</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="intro">Admission is currently ongoing for the 2020/2021 Academic session for <b>Certificate, Diploma and Advanced Diploma</b> in Christian Service.\n\nAdmission into the institute is open to all Christians irrespective of denominational affiliation.
+</string>
+    <string name="obj1">To deal with the scandal of biblical illiteracy in contemporary Christian through a balanced teaching of the Bible.</string>
+</resources>

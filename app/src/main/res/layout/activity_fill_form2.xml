@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.mike.wordrays.ui.form.FillFormViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.form.FillForm">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please fill this form to complete your profile"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginTop="30dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tv_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp"
+                    android:textSize="14sp"
+                    android:maxLines="1"
+                    android:text="@={viewModel.firstName}"
+                    android:fontFamily="@font/poppins_medium"
+                    android:inputType="text"
+                    android:hint="Full name (Surname first)" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp"
+                    android:textSize="14sp"
+                    android:maxLines="3"
+                    android:text="@={viewModel.address}"
+                    android:fontFamily="@font/poppins_medium"
+                    android:inputType="text"
+                    android:hint="Home Address" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tv_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp"
+                    android:textSize="14sp"
+                    android:maxLines="1"
+                    android:text="@={viewModel.dateOfBirth}"
+                    android:fontFamily="@font/poppins_medium"
+                    android:inputType="text"
+                    android:hint="Date of Birth" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp"
+                    android:textSize="14sp"
+                    android:maxLines="1"
+                    android:text="@={viewModel.phoneNumber}"
+                    android:fontFamily="@font/poppins_medium"
+                    android:inputType="number"
+                    android:hint="Phone Number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/qualification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp"
+                    android:textSize="14sp"
+                    android:maxLines="3"
+                    android:text="@={viewModel.qualification}"
+                    android:fontFamily="@font/poppins_medium"
+                    android:inputType="text"
+                    android:hint="Highest Educational Qualification" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tv_occupation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp"
+                    android:textSize="14sp"
+                    android:maxLines="1"
+                    android:text="@={viewModel.occupation}"
+                    android:fontFamily="@font/poppins_medium"
+                    android:inputType="text"
+                    android:hint="Occupation" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textColor="@android:color/white"
+                android:layout_margin="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:background="@drawable/register_bg"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</layout>

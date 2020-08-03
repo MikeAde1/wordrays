@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "449263960848",
+    "firebase_url": "https://wordrays-e1f0e.firebaseio.com",
+    "project_id": "wordrays-e1f0e",
+    "storage_bucket": "wordrays-e1f0e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449263960848:android:fe6690a34adc87ac4b1b95",
+        "android_client_info": {
+          "package_name": "com.mike.wordrays"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "449263960848-00ing2mlvnj35cf4notbe9u0781eji77.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mike.wordrays",
+            "certificate_hash": "87086dbce3ceebf6ed01c01f8f2ac37c6c13925f"
+          }
+        },
+        {
+          "client_id": "449263960848-1p1rabdt404abjo7ipc0q9oq0f74nabi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWiPQEUxy90CONPNOvZ-zSfseOVmAc7pE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "449263960848-1p1rabdt404abjo7ipc0q9oq0f74nabi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
