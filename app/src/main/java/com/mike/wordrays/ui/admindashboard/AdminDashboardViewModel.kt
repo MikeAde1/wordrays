@@ -14,8 +14,6 @@ import com.mike.wordrays.data.model.Member
 
 class AdminDashboardViewModel : ViewModel() {
 
-
-    val firebaseAuth = FirebaseAuth.getInstance()
     private val database = FirebaseDatabase.getInstance()
     private val databaseRef = database.getReference("users")
     val name = MutableLiveData<String>()
@@ -28,6 +26,7 @@ class AdminDashboardViewModel : ViewModel() {
     val list = MutableLiveData<Resource<List<Member>>>()
     val values = arrayListOf<Member>()
     val address = MutableLiveData<String>()
+    val email = MutableLiveData<String>()
 
 
     fun getDetails() {
@@ -63,5 +62,6 @@ class AdminDashboardViewModel : ViewModel() {
         dob.value = member.dob
         qualification.value = member.qualification
         address.value = member.address
+        email.value = member.email
     }
 }
