@@ -57,7 +57,6 @@ class RegisterActivity : AppCompatActivity() {
                         loading.dismiss()
                     }
                     prefStore.saveLogIn(true)
-                    Toast.makeText(this@RegisterActivity, "showinginggggg", LENGTH_LONG).show()
                     startActivity(Intent(this, FillForm::class.java))
                 }
             }

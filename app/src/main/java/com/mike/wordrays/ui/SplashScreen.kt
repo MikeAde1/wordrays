@@ -14,6 +14,7 @@ import com.google.firebase.database.ValueEventListener
 import com.mike.wordrays.R
 import com.mike.wordrays.data.PrefStore
 import com.mike.wordrays.ui.admindashboard.AdminDashboard
+import com.mike.wordrays.ui.form.FillForm
 import com.mike.wordrays.ui.home.Home
 import com.mike.wordrays.ui.login.Login
 import com.mike.wordrays.ui.register.AdminRegister
@@ -44,8 +45,13 @@ class SplashScreen : AppCompatActivity() {
 
                             override fun onDataChange(snapshot: DataSnapshot) {
                                 if (snapshot.child("admin").value == false) {
-                                    startActivity(Intent(this@SplashScreen, Home::class.java))
-                                    finish()
+                                    if (snapshot.child("full_name").value != null) {
+                                        startActivity(Intent(this@SplashScreen, Home::class.java))
+                                        finish()
+                                    } else {
+                                        startActivity(Intent(this@SplashScreen, FillForm::class.java))
+                                        finish()
+                                    }
                                 } else if (snapshot.child("admin").value == true){
                                     startActivity(Intent(this@SplashScreen, AdminDashboard::class.java))
                                     finish()
